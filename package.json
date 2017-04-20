@@ -1,0 +1,38 @@
+{
+  "name": "mpowerpayment",
+  "version": "1.0.0",
+  "description": "Service for mpowerpayment ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "build-debug": "browserify index.js -o dist/mpowerpayment.js",
+    "build": "browserify -g uglifyify index.js -o  dist/mpowerpayment.min.js"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "mpower",
+    "payment",
+    "mpowerpayment",
+    "mobilemoney"
+  ],
+  "standard": {
+    "ignore": [
+      "dist/**"
+    ]
+  },
+  "author": "banphlet",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "node-rest-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "uglifyify": "^3.0.4",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mocha": "^3.2.0"
+  }
+}
