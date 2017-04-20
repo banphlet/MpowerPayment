@@ -1,6 +1,6 @@
 {
   "name": "mpowerpayment",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Service for mpowerpayment ",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "repository": {
     "type": "git"
   },
+   "author": "Nana Kwame Zoe<banphlet4@gmail.com> (https://github.com/banphlet)",
   "keywords": [
     "mpower",
     "payment",
@@ -22,8 +23,7 @@
       "dist/**"
     ]
   },
-  "author": "banphlet",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "bluebird": "^3.5.0",
     "node-rest-client": "^3.1.0"
