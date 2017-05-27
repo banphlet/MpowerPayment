@@ -1,28 +1,22 @@
 "use strict";
-var DirectMobileCharge = require('./lib/directmobile');
-var DirectMobileStatus = require('./lib/directmobilestatus');
-var DirectPay = require('./lib/directpay');
-var DirectPaySandbox = require('./lib/sandboxrequest');
+var ReceiveMobileMoney = require('./lib/receivemobilemoney');
+var SendMobileMoney = require('./lib/sendmobilemoney');
 /**
  * Set up mpower authentication
  * @param {object} data
  */
 function MpowerPayment(data){
-    if(!data.masterKey ||  !data.privateKey || !data.token){
+    if(!data.secretid ||  !data.clientid || !data.merchantaccnumber){
         throw ('MpowerPayment Authentication failed')
     }
   this.config = {}
-  this.config['MP-Master-Key'] = data && data.masterKey || process.env.MP_MASTER_KEY;
-  this.config['MP-Private-Key'] = data && data.privateKey || process.env.MP_PRIVATE_KEY;
-  // this.config['MP-Public-Key'] = data && data.publicKey || process.env.MP_PUBLIC_KEY;
-  this.config['MP-Token'] = data && data.token || process.env.MP_TOKEN;
-  this.config['Content-Type'] = 'application/json';
-this.mpowerurl = 'https://app.mpowerpayments.com/api/v1';
+  this.config['clientid'] = data && data.clientid || process.env.clientid;
+  this.config['secretid'] = data && data.secretid || process.env.secretid;
+   this.config['merchantaccnumber'] = data && data.merchantaccnumber || process.env.merchantaccnumber;
+this.hubtelurl = 'https://api.hubtel.com/v1/merchantaccount/';
 
 }
 
-MpowerPayment.prototype.DirectMobileCharge = DirectMobileCharge;
-MpowerPayment.prototype.DirectMobileStatus = DirectMobileStatus;
-MpowerPayment.prototype.DirectPay = DirectPay;
-MpowerPayment.prototype.DirectPaySandbox = DirectPaySandbox;
+MpowerPayment.prototype.ReceiveMobileMoney = ReceiveMobileMoney;
+MpowerPayment.prototype.SendMobileMoney = SendMobileMoney;
 module.exports = MpowerPayment;

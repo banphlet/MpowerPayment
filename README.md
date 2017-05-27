@@ -18,7 +18,7 @@ Setup Api Keys
   })
   ```
  It is most advicable to put keys in environmental variables.
- ## Direct Mobile Charge
+ # Direct Mobile Charge
  Requires Mpower Live Keys To Work.
   After initialization.
   ```
@@ -33,21 +33,21 @@ Setup Api Keys
            console.log(data)
         })
  ```
-  ## Direct Mobile Status
+  # Direct Mobile Status
    ```
  var data = { "token" : "6d875bf6f28b4c5d01e58e7c"} 
  mppayments.DirectMobileStatus(data).then(function(data) {
   console.log(data)
      })
  ```
- ## Direct Pay
+ # Direct Pay
 ```
 var data = { "account_alias" : "0244124660", "amount" : 30.50 };
 mppayments.DirectPay(data).then(function(data) {
 console.log(data)
      })
  ```
- ## Direct Pay SandBox Mode
+ # Direct Pay SandBox Mode
  When using Sandbox mode, use test keys from Mpower Dashboard.
 ```
  var data = { "account_alias" : "0244124660", "amount" : 30.50 };
