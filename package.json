@@ -4,6 +4,7 @@
   "description": "A libray For Mpower Payments ",
   "main": "test.js",
   "scripts": {
+    "start": "node test.js",
     "test": "mocha test",
     "build-debug": "browserify index.js -o dist/mpowerpayment.js",
     "build": "browserify -g uglifyify index.js -o  dist/mpowerpayment.min.js"
