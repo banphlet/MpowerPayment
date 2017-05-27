@@ -2,7 +2,7 @@
   "name": "mpowerpayment",
   "version": "1.0.2",
   "description": "A libray For Mpower Payments ",
-  "main": "index.js",
+  "main": "test.js",
   "scripts": {
     "test": "mocha test",
     "build-debug": "browserify index.js -o dist/mpowerpayment.js",

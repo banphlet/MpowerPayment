@@ -18,7 +18,7 @@ var mp = require('./index');
 });
 
  apiRoutes.post('/moneycallback', function(req, res) {
-   console.log(req.body)
+   alert(req.body)
   })
 var  data = {
   secretid: 'bxjnlkou',
@@ -32,7 +32,7 @@ var py = {
   "CustomerEmail": "customeremail@gmail.com",
   "Channel": "airtel-gh",
   "Amount": 0.8,
- "PrimaryCallbackUrl": "http://localhost:3000/api/v1/moneycallback",
+ "PrimaryCallbackUrl": "https://hubtelpayment.herokuapp.com/api/v1/moneycallback",
   "Description": "T Shirt"
 }
 mpower.ReceiveMobileMoney(py).then(res=>{
