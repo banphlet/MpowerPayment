@@ -18,12 +18,12 @@ var mp = require('./index');
 });
 
  apiRoutes.post('/moneycallback', function(req, res) {
-   alert(req.body)
+   console.log(req.body)
   })
 var  data = {
   secretid: 'bxjnlkou',
   clientid: 'rfizcbnm',
-  merchantaccnumber: 'HM2205170009'
+  merchantaccnumber: 'HM2205170009' ///////
 }
 var mpower = new mp(data)
 var py = {
