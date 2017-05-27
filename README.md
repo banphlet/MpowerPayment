@@ -1,5 +1,5 @@
 # MpowerPayment
-# LIBRAY IS DEPRECATED PLSS USE [HUBTEL PAYMENT](https://github.com/banphlet/HubtelMobilePayment)
+# LIBRAY IS DEPRECATED PLEASE USE [HUBTEL PAYMENT](https://github.com/banphlet/HubtelMobilePayment)
 This is an unofficial NodeJs Library for [MpowerPayment](http://www.mpowerpayments.com) 
 Built using [node-rest-client](https://github.com/aacerox/node-rest-client).
 # Installation
