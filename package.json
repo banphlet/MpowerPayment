@@ -33,16 +33,16 @@
     "bluebird": "^3.5.0",
     "node-rest-client": "^3.1.0",
     "request": "^2.81.0",
-    "superagent": "^3.5.2",
+    "superagent": "^4.1.0",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mocha": "^3.2.0"
+    "mocha": "^6.0.1"
   },
   "devDependencies": {
-    "browserify": "^14.3.0",
-    "uglifyify": "^3.0.4",
+    "browserify": "^16.2.3",
+    "uglifyify": "^5.0.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mocha": "^3.2.0"
+    "mocha": "^6.0.1"
   }
 }
