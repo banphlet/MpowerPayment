@@ -1,4 +1,7 @@
 # MpowerPayment
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/banphlet/MpowerPayment.svg)](https://greenkeeper.io/)
+
 # LIBRAY IS DEPRECATED PLEASE USE [HUBTEL PAYMENT](https://github.com/banphlet/HubtelMobilePayment)
 This is an unofficial NodeJs Library for [MpowerPayment](http://www.mpowerpayments.com) 
 Built using [node-rest-client](https://github.com/aacerox/node-rest-client).
